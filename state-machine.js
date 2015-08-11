@@ -7,7 +7,7 @@
 
 */
 
-(function () {
+define(function(require, exports, module) {
 
   var StateMachine = {
 
@@ -192,36 +192,8 @@
       };
     }
 
-  }; // StateMachine
+  }; 
 
-  //===========================================================================
+  module.exports = StateMachine;
 
-  //======
-  // NODE
-  //======
-  if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = StateMachine;
-    }
-    exports.StateMachine = StateMachine;
-  }
-  //============
-  // AMD/REQUIRE
-  //============
-  else if (typeof define === 'function' && define.amd) {
-    define(function(require) { return StateMachine; });
-  }
-  //========
-  // BROWSER
-  //========
-  else if (typeof window !== 'undefined') {
-    window.StateMachine = StateMachine;
-  }
-  //===========
-  // WEB WORKER
-  //===========
-  else if (typeof self !== 'undefined') {
-    self.StateMachine = StateMachine;
-  }
-
-}());
+});

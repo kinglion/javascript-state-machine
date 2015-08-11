@@ -362,6 +362,11 @@ If you have any ideas, feedback, requests or bug reports, you can reach me at
 my website: [Code inComplete](http://codeincomplete.com/)
 
 
+Change
+======
+Change It original code, only support for seajs
+
+
 
 
 
